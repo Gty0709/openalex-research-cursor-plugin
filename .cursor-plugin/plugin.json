@@ -1,0 +1,30 @@
+{
+  "name": "openalex-research",
+  "displayName": "OpenAlex Research",
+  "version": "0.1.0",
+  "description": "Search and analyze 480M+ scholarly works in OpenAlex from Cursor: papers, citations, authors, institutions, venues, and research trends, via the open-source openalex-research-mcp server.",
+  "author": {
+    "name": "Ty (Tongji University Intelligent Construction Lab)"
+  },
+  "homepage": "https://github.com/oksure/openalex-research-mcp",
+  "repository": "https://github.com/Gty0709/openalex-research-cursor-plugin",
+  "license": "MIT",
+  "keywords": ["openalex", "mcp", "research", "literature-review", "citations", "scholarly", "academic", "papers", "bibliometrics"],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "OPENALEX_API_KEY": {
+        "type": "string",
+        "title": "OpenAlex API key",
+        "description": "Free key from https://openalex.org/settings/api. Since Feb 2026 OpenAlex expects a key for anything beyond light demo use ($1/day free usage)."
+      },
+      "OPENALEX_EMAIL": {
+        "type": "string",
+        "title": "Contact email (optional)",
+        "description": "Optional contact email sent in the User-Agent header. The legacy polite-pool mailto parameter is ignored by OpenAlex since Feb 2026."
+      }
+    },
+    "required": ["OPENALEX_API_KEY"]
+  }
+}
