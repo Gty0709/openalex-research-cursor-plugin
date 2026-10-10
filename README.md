@@ -1,0 +1,1 @@
+# openalex-research-cursor-plugin
